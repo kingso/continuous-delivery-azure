@@ -76,7 +76,7 @@ jobs:
         run: gh pr merge --squash staging-workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+# force
       # Pull main
       - name: Pull main
         run: .github/script/pull-main.sh
